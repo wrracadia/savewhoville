@@ -7,11 +7,11 @@
 <style>
 
     @font-face {
-        font-family:'Grinched';
-        src:url('Grinched20-0YKd.ttf') format('truetype');
+        font-family:'Grinchmas';
+        src:url('Grinchmas-z86B0.ttf') format('truetype');
     }
     body {
-        font-family: 'Grinched', serif;
+        font-family: 'Grinchmas', serif;
         text-align: center;
         background: #f5f8f5;
         color: #333;
@@ -19,7 +19,7 @@
     }
 
     h1 {
-        font-family:'Grinched', serif;
+        font-family:'Grinchmas', serif;
     }
     
     .container {
@@ -64,19 +64,16 @@
 <div id="loginPage" class="container">
     <h1 style="font-size: clamp(3rem, 9vw, 6rem);">  What is the magic of Christmas?  </h1>
     <p style="font-size: 24px;"><strong>Have you UnThinged all the GibberWords?</strong></p>
-
-<form onsubmit="CheckPassword(); return false;">
+ 
     <input
         type="text"
         id="password"
         placeholder="Enter your answer..."
-        onkeypress="handleKeyPress(event)"
         autocomplete="off">
  
     <br>
  
     <button onclick="checkPassword()">Ask the Cat in the Hat</button>
-</form>
  
     <div id="error" class="error"></div>
 </div>
