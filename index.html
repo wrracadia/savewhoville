@@ -8,7 +8,7 @@
 
     @font-face {
         font-family:'Grinchmas';
-        src:url('Grinchmas-z86B0.ttf') format('truetype');
+        src:url('Grinched20-0YKd.ttf') format('truetype');
     }
     body {
         font-family: 'Grinchmas', serif;
@@ -64,21 +64,25 @@
 <div id="loginPage" class="container">
     <h1 style="font-size: clamp(3rem, 9vw, 6rem);">  What is the magic of Christmas?  </h1>
     <p style="font-size: 24px;"><strong>Have you UnThinged all the GibberWords?</strong></p>
- 
+
+<form onsubmit="CheckPassword(); return false;">
     <input
         type="text"
         id="password"
         placeholder="Enter your answer..."
+        onkeypress="handleKeyPress(event)">
         autocomplete="off">
  
     <br>
  
-    <button onclick="checkPassword()">Ask the Cat in the Hat</button>
+    <button type="submit">Ask the Cat in the Hat</button>
+</form>
  
     <div id="error" class="error"></div>
 </div>
  
 <div id="poemPage" class="container">
+    <img src="heart.webp" alt="heart">
     <p style="font-size: 36px;">The magic of Christmas is</p>
     <h1 style="font-size: 72px;">  FAMILY!  </h1>
  <p style="font-size: 36px;">said the Cat.<br>
@@ -90,7 +94,6 @@
  Family, chosen or not - <br>
  Who remind us of all of the good<br>
  we've all got.</p>
-    <img src="heart.webp" alt="heart">
 </div>
  
 <script>
